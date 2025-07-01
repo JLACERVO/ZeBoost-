@@ -24,16 +24,18 @@
 /* Card hover effects */
 .card {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    border: none;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Service cards special effects */
-.service-card {
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
+/* Link cards for dashboard actions */
+a.card {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.card:hover {
+    color: inherit;
