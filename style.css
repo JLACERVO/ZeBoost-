@@ -1,29 +1,39 @@
+/* Custom styles for Zé Boost power instagram */
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #111;
-  color: #fff;
-  margin: 0;
-  padding: 0;
+:root {
+    --instagram-gradient: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    --instagram-purple: #833ab4;
+    --instagram-pink: #e1306c;
 }
-header {
-  background-color: #222;
-  padding: 10px;
-  text-align: center;
+
+/* Custom Instagram-inspired elements */
+.hero-section {
+    background: var(--instagram-gradient);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    border-radius: 1rem;
+    color: white;
 }
-nav a {
-  margin: 0 10px;
-  color: #00f5d4;
-  text-decoration: none;
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
-main {
-  padding: 20px;
+
+/* Card hover effects */
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: none;
 }
-.botao {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #00f5d4;
-  color: #000;
-  text-decoration: none;
-  border-radius: 5px;
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
+
+/* Service cards special effects */
+.service-card {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
