@@ -1,21 +1,53 @@
+
 :root {
   --instagram-gradient: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
+
 body {
   margin: 0;
-  font-family: sans-serif;
-  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
 }
+
 .hero-section {
   background: var(--instagram-gradient);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
-  border-radius: 1rem;
+  text-align: center;
   padding: 2rem;
   color: white;
-  text-align: center;
-  margin: 2rem;
+  border-radius: 1rem;
 }
+
+.btn-pagamento {
+  display: inline-block;
+  background-color: white;
+  color: #e1306c;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-pagamento:hover {
+  background-color: #f2f2f2;
+}
+
+.servicos {
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }

@@ -1,1 +1,2 @@
-console.log("Zé Boost site carregado!");
+
+console.log("Zé Boost carregado com sucesso!");
