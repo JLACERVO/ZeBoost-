@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>TrampoFácil - Encontre Serviços Online</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>📌 TrampoFácil - Todos os serviços online num só lugar</h1>
+    <a href="/divulgar">+ Divulgar meu serviço</a>
+    <div class="services">
+        {% for s in services %}
+            <div class="service-card">
+                <h2>{{ s.service }}</h2>
+                <p><strong>Profissional:</strong> {{ s.name }}</p>
+                <p>{{ s.description }}</p>
+                <p><a href="https://wa.me/{{ s.contact }}" target="_blank">💬 Falar com Profissional</a></p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
