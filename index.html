@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="pt-BR">
+
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -72,50 +74,54 @@
   </header>
   <div class="container">
     <div class="formulario">
-      <label for="servico">Escolha um serviço:</label>
-      <select name="servico" id="servico">
-        <option disabled selected>Escolha uma opção</option>
-        <optgroup label="🔸 IG - VISUALIZAÇÕES REELS">
-          <option value="2">Visualizações reels HQ - R$0,48/1000</option>
-        </optgroup>
-        <optgroup label="🔸 IG - SEGUIDORES MUNDIAIS">
-          <option value="3">Seguidores mundiais HQ - R$14,62</option>
-          <option value="125">Seguidores mundiais R30 - R$20,56</option>
-        </optgroup>
-        <optgroup label="🔸 IG - CURTIDAS MUNDIAIS">
-          <option value="6">Curtidas mundiais HQ - R$2,00</option>
-          <option value="7">Curtidas mundiais R30 - R$2,50</option>
-        </optgroup>
-        <optgroup label="🔸 IG - SEGUIDORES BRASILEIROS">
-          <option value="10">Seguidores BR SR - R$36,96</option>
-          <option value="11">Seguidores BR R30 - R$36,68</option>
-          <option value="127">Seguidores BR SR Rápido - R$30,60</option>
-          <option value="130">Seguidores BR R30 Rápido - R$39,00</option>
-        </optgroup>
-        <optgroup label="🔸 IG - CURTIDAS BRASILEIRAS">
-          <option value="23">Curtidas BR SR - R$4,50</option>
-          <option value="24">Curtidas BR R30 - R$4,40</option>
-          <option value="26">Curtidas Auto BR - R$6,00</option>
-        </optgroup>
-        <optgroup label="🔸 IG - COMENTÁRIOS BRASILEIROS">
-          <option value="45">Comentários Prontos - R$503,10</option>
-          <option value="47">Customizáveis MQ - R$427,50</option>
-        </optgroup>
-      </select>
-      <label for="quantidade">Quantidade:</label>
-      <input type="number" id="quantidade" name="quantidade" placeholder="Ex: 1000" required /><label for="link">Link do perfil/postagem:</label>
-  <input type="url" id="link" name="link" placeholder="https://instagram.com/seuperfil" required />
+      <form action="https://app.paggue.io/public/checkout" method="POST" target="_blank">
+        <label for="servico">Escolha um serviço:</label>
+        <select name="servico" id="servico" required>
+          <option disabled selected>Escolha uma opção</option>
+          <optgroup label="🔸 IG - VISUALIZAÇÕES REELS">
+            <option value="2">Visualizações reels HQ - R$0,48/1000</option>
+          </optgroup>
+          <optgroup label="🔸 IG - SEGUIDORES MUNDIAIS">
+            <option value="3">Seguidores mundiais HQ - R$14,62</option>
+            <option value="125">Seguidores mundiais R30 - R$20,56</option>
+          </optgroup>
+          <optgroup label="🔸 IG - CURTIDAS MUNDIAIS">
+            <option value="6">Curtidas mundiais HQ - R$2,00</option>
+            <option value="7">Curtidas mundiais R30 - R$2,50</option>
+          </optgroup>
+          <optgroup label="🔸 IG - SEGUIDORES BRASILEIROS">
+            <option value="10">Seguidores BR SR - R$36,96</option>
+            <option value="11">Seguidores BR R30 - R$36,68</option>
+            <option value="127">Seguidores BR SR Rápido - R$30,60</option>
+            <option value="130">Seguidores BR R30 Rápido - R$39,00</option>
+          </optgroup>
+          <optgroup label="🔸 IG - CURTIDAS BRASILEIRAS">
+            <option value="23">Curtidas BR SR - R$4,50</option>
+            <option value="24">Curtidas BR R30 - R$4,40</option>
+            <option value="26">Curtidas Auto BR - R$6,00</option>
+          </optgroup>
+          <optgroup label="🔸 IG - COMENTÁRIOS BRASILEIROS">
+            <option value="45">Comentários Prontos - R$503,10</option>
+            <option value="47">Customizáveis MQ - R$427,50</option>
+          </optgroup>
+        </select>
 
-  <label for="info">Observações (opcional):</label>
-  <textarea id="info" name="info" rows="3"></textarea>
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" placeholder="Ex: 1000" required />
 
-  <input type="hidden" name="client_key" value="0454451549397705112" />
-  <input type="hidden" name="client_secret" value="0897351410391611072" />
-  <input type="hidden" name="company_id" value="173062" />
+        <label for="link">Link do perfil/postagem:</label>
+        <input type="url" id="link" name="link" placeholder="https://instagram.com/seuperfil" required />
 
-  <button type="submit">Pagar com Paggue</button>
-</div>
+        <label for="info">Observações (opcional):</label>
+        <textarea id="info" name="info" rows="3"></textarea>
 
+        <input type="hidden" name="client_key" value="0454451549397705112" />
+        <input type="hidden" name="client_secret" value="0897351410391611072" />
+        <input type="hidden" name="company_id" value="173062" />
+
+        <button type="submit">💳 Pagar com Paggue</button>
+      </form>
+    </div>
   </div>
   <footer>
     Suporte via WhatsApp: <a style="color: white;" href="https://wa.me/5547997845342">(47) 99784-5342</a><br/>
