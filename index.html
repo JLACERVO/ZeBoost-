@@ -1,126 +1,125 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zé Boost Power Instagram</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-      background-size: 400% 400%;
-      animation: gradientShift 15s ease infinite;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #833ab4, #fd1d1d);
       color: #fff;
-    }
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      margin: 0;
+      padding: 0;
     }
     header {
-      text-align: center;
       padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.4);
+      text-align: center;
     }
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
     .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    .package {
-      background-color: rgba(255,255,255,0.1);
       padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      border: 1px solid #fff2;
+      max-width: 900px;
+      margin: 0 auto;
     }
-    .package h2 {
+    .pacote {
+      background: rgba(255,255,255,0.1);
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+    }
+    .pacote h3 {
       margin-top: 0;
     }
-    .package button {
-      background-color: #fff;
-      border: none;
-      padding: 0.7rem 1.5rem;
+    .formulario {
+      margin-top: 1rem;
+    }
+    input, select, button, textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.5rem;
       border-radius: 5px;
+      border: none;
+    }
+    button {
+      background-color: #e1306c;
+      color: white;
       font-weight: bold;
       cursor: pointer;
     }
-    .contact {
-      margin-top: 4rem;
-      text-align: center;
-    }
     footer {
-      text-align: center;
-      margin-top: 4rem;
       padding: 1rem;
-      background: rgba(0,0,0,0.3);
+      text-align: center;
+      font-size: 0.9rem;
+      background-color: #00000044;
+      margin-top: 2rem;
     }
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-    }
-    .whatsapp-float a {
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 16px;
-      border-radius: 50px;
-      text-decoration: none;
+    .categoria {
+      font-size: 1.2rem;
+      margin: 2rem 0 1rem;
       font-weight: bold;
-      box-shadow: 0 0 10px #000;
+      border-bottom: 1px solid #fff;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Zé Boost Power Instagram 🚀</h1>
-    <p>Compre seguidores, curtidas e visualizações com confiança e pagamento seguro!</p>
+    <p>Serviços profissionais para turbinar o seu perfil com pagamento seguro via Paggue</p>
   </header>
-
   <div class="container">
-    <div class="package">
-      <h2>🎯 Seguidores Brasileiros</h2>
-      <p>Alta qualidade, início rápido. R$39,00 por 1.000 seguidores</p>
-      <a href="https://app.paggue.io/checkout/173062/seguidorestop" target="_blank">
-        <button>Comprar Agora</button>
-      </a>
-    </div>
+    <div class="formulario">
+      <label for="servico">Escolha um serviço:</label>
+      <select name="servico" id="servico">
+        <option disabled selected>Escolha uma opção</option>
+        <optgroup label="🔸 IG - VISUALIZAÇÕES REELS">
+          <option value="2">Visualizações reels HQ - R$0,48/1000</option>
+        </optgroup>
+        <optgroup label="🔸 IG - SEGUIDORES MUNDIAIS">
+          <option value="3">Seguidores mundiais HQ - R$14,62</option>
+          <option value="125">Seguidores mundiais R30 - R$20,56</option>
+        </optgroup>
+        <optgroup label="🔸 IG - CURTIDAS MUNDIAIS">
+          <option value="6">Curtidas mundiais HQ - R$2,00</option>
+          <option value="7">Curtidas mundiais R30 - R$2,50</option>
+        </optgroup>
+        <optgroup label="🔸 IG - SEGUIDORES BRASILEIROS">
+          <option value="10">Seguidores BR SR - R$36,96</option>
+          <option value="11">Seguidores BR R30 - R$36,68</option>
+          <option value="127">Seguidores BR SR Rápido - R$30,60</option>
+          <option value="130">Seguidores BR R30 Rápido - R$39,00</option>
+        </optgroup>
+        <optgroup label="🔸 IG - CURTIDAS BRASILEIRAS">
+          <option value="23">Curtidas BR SR - R$4,50</option>
+          <option value="24">Curtidas BR R30 - R$4,40</option>
+          <option value="26">Curtidas Auto BR - R$6,00</option>
+        </optgroup>
+        <optgroup label="🔸 IG - COMENTÁRIOS BRASILEIROS">
+          <option value="45">Comentários Prontos - R$503,10</option>
+          <option value="47">Customizáveis MQ - R$427,50</option>
+        </optgroup>
+      </select>
+      <label for="quantidade">Quantidade:</label>
+      <input type="number" id="quantidade" name="quantidade" placeholder="Ex: 1000" required /><label for="link">Link do perfil/postagem:</label>
+  <input type="url" id="link" name="link" placeholder="https://instagram.com/seuperfil" required />
 
-    <div class="package">
-      <h2>❤️ Curtidas Reais</h2>
-      <p>Engajamento real em suas publicações. R$4,50 por 1.000 curtidas</p>
-      <a href="https://app.paggue.io/checkout/173062/curtidasbr" target="_blank">
-        <button>Comprar Agora</button>
-      </a>
-    </div>
+  <label for="info">Observações (opcional):</label>
+  <textarea id="info" name="info" rows="3"></textarea>
 
-    <div class="package">
-      <h2>👀 Visualizações Reels</h2>
-      <p>Aumente o alcance do seu conteúdo. R$0,48 por 1.000 visualizações</p>
-      <a href="https://app.paggue.io/checkout/173062/reelsboost" target="_blank">
-        <button>Comprar Agora</button>
-      </a>
-    </div>
+  <input type="hidden" name="client_key" value="0454451549397705112" />
+  <input type="hidden" name="client_secret" value="0897351410391611072" />
+  <input type="hidden" name="company_id" value="173062" />
 
-    <div class="contact">
-      <h3>📩 Fale com a gente</h3>
-      <p>E-mail: <a href="mailto:Acervochannel@gmail.com" style="color: #fff; font-weight: bold;">Acervochannel@gmail.com</a></p>
-    </div>
+  <button type="submit">Pagar com Paggue</button>
+</div>
+
   </div>
-
-  <div class="whatsapp-float">
-    <a href="https://wa.me/5547997845342" target="_blank">💬 Fale no WhatsApp</a>
-  </div>
-
   <footer>
-    <p>© 2025 Zé Boost. Todos os direitos reservados.</p>
+    Suporte via WhatsApp: <a style="color: white;" href="https://wa.me/5547997845342">(47) 99784-5342</a><br/>
+    E-mail: <a style="color: white;" href="mailto:acervochannel@gmail.com">acervochannel@gmail.com</a>
   </footer>
 </body>
 </html>
