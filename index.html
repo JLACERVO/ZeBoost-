@@ -3,129 +3,36 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zé Boost Power Instagram</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom, #833ab4, #fd1d1d);
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    .container {
-      padding: 1rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .pacote {
-      background: rgba(255,255,255,0.1);
-      padding: 1rem;
-      margin-bottom: 1.5rem;
-      border-radius: 10px;
-    }
-    .pacote h3 {
-      margin-top: 0;
-    }
-    .formulario {
-      margin-top: 1rem;
-    }
-    input, select, button, textarea {
-      width: 100%;
-      padding: 0.7rem;
-      margin-top: 0.5rem;
-      border-radius: 5px;
-      border: none;
-    }
-    button {
-      background-color: #e1306c;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    footer {
-      padding: 1rem;
-      text-align: center;
-      font-size: 0.9rem;
-      background-color: #00000044;
-      margin-top: 2rem;
-    }
-    .categoria {
-      font-size: 1.2rem;
-      margin: 2rem 0 1rem;
-      font-weight: bold;
-      border-bottom: 1px solid #fff;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Zé Boost Power Instagram 🚀</h1>
-    <p>Serviços profissionais para turbinar o seu perfil com pagamento seguro via Paggue</p>
+    <p>Serviços profissionais com pagamento via Paggue</p>
   </header>
-  <div class="container">
-    <div class="formulario">
-      <form action="https://app.paggue.io/public/checkout" method="POST" target="_blank">
-        <label for="servico">Escolha um serviço:</label>
-        <select name="servico" id="servico" required>
-          <option disabled selected>Escolha uma opção</option>
-          <optgroup label="🔸 IG - VISUALIZAÇÕES REELS">
-            <option value="2">Visualizações reels HQ - R$0,48/1000</option>
-          </optgroup>
-          <optgroup label="🔸 IG - SEGUIDORES MUNDIAIS">
-            <option value="3">Seguidores mundiais HQ - R$14,62</option>
-            <option value="125">Seguidores mundiais R30 - R$20,56</option>
-          </optgroup>
-          <optgroup label="🔸 IG - CURTIDAS MUNDIAIS">
-            <option value="6">Curtidas mundiais HQ - R$2,00</option>
-            <option value="7">Curtidas mundiais R30 - R$2,50</option>
-          </optgroup>
-          <optgroup label="🔸 IG - SEGUIDORES BRASILEIROS">
-            <option value="10">Seguidores BR SR - R$36,96</option>
-            <option value="11">Seguidores BR R30 - R$36,68</option>
-            <option value="127">Seguidores BR SR Rápido - R$30,60</option>
-            <option value="130">Seguidores BR R30 Rápido - R$39,00</option>
-          </optgroup>
-          <optgroup label="🔸 IG - CURTIDAS BRASILEIRAS">
-            <option value="23">Curtidas BR SR - R$4,50</option>
-            <option value="24">Curtidas BR R30 - R$4,40</option>
-            <option value="26">Curtidas Auto BR - R$6,00</option>
-          </optgroup>
-          <optgroup label="🔸 IG - COMENTÁRIOS BRASILEIROS">
-            <option value="45">Comentários Prontos - R$503,10</option>
-            <option value="47">Customizáveis MQ - R$427,50</option>
-          </optgroup>
-        </select>
-
-        <label for="quantidade">Quantidade:</label>
-        <input type="number" id="quantidade" name="quantidade" placeholder="Ex: 1000" required />
-
-        <label for="link">Link do perfil/postagem:</label>
-        <input type="url" id="link" name="link" placeholder="https://instagram.com/seuperfil" required />
-
-        <label for="info">Observações (opcional):</label>
-        <textarea id="info" name="info" rows="3"></textarea>
-
-        <input type="hidden" name="client_key" value="0454451549397705112" />
-        <input type="hidden" name="client_secret" value="0897351410391611072" />
-        <input type="hidden" name="company_id" value="173062" />
-
-        <button type="submit">💳 Pagar com Paggue</button>
-      </form>
-    </div>
-  </div>
+  <main class="container">
+    <form id="pedidoForm">
+      <input type="text" id="nome" placeholder="Seu nome completo" required />
+      <input type="email" id="email" placeholder="Seu e-mail" required />
+      <select id="servico" required>
+        <option disabled selected>Selecione o serviço</option>
+        <option value="2">Visualizações reels HQ - R$0,48/1000</option>
+        <option value="3">Seguidores mundiais HQ - R$14,62</option>
+        <option value="130">Seguidores BR R30 Rápido - R$39,00</option>
+        <option value="127">Seguidores BR SR Rápido - R$30,60</option>
+        <option value="24">Curtidas BR R30 - R$4,40</option>
+        <option value="23">Curtidas BR SR - R$4,50</option>
+      </select>
+      <input type="number" id="quantidade" placeholder="Quantidade (mínimo 10)" required />
+      <input type="url" id="link" placeholder="Link do perfil/postagem" required />
+      <div id="mensagem" style="margin:10px 0;"></div>
+      <button type="submit">Pagar com Paggue</button>
+    </form>
+  </main>
   <footer>
-    Suporte via WhatsApp: <a style="color: white;" href="https://wa.me/5547997845342">(47) 99784-5342</a><br/>
-    E-mail: <a style="color: white;" href="mailto:acervochannel@gmail.com">acervochannel@gmail.com</a>
+    Suporte: <a href="https://wa.me/5547997845342">(47) 99784-5342</a> | Email: <a href="mailto:acervochannel@gmail.com">acervochannel@gmail.com</a>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
